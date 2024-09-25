@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'Mokoto';
+    src: url('fonts/mokoto.otf') format('opentype');
+    font-weight: normal; /* Optional: Define specific weights */
+    font-style: normal;  /* Optional: Define specific styles */
+}
+@font-face {
+    font-family: 'Mokoto Glitch 01';
+    src: url('fonts/mokoto-glitch-mark-1-400.otf') format('opentype');
+    font-weight: normal; /* Optional: Define specific weights */
+    font-style: normal;  /* Optional: Define specific styles */
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+  
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: radial-gradient(circle, #000000, #040404, #090909);
+    background-size: 200% 200%;
+    animation: gradient 30s ease infinite;
+}
+
+.bold-container {
+    text-align: center;
+    max-width: 100%;
+    width: 1100px;
+}
+
+h1 {
+    font-size: 6rem;
+    letter-spacing: 5px;
+}
+.glitch-text-wrapper {
+    position: relative;
+}
+h2 {
+    color: #fff;
+    opacity: 0.5;
+    font-family: 'Mokoto', sans-serif;
+}
+h2.glitch {
+    color: blue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.5;
+    font-family: 'Mokoto Glitch 01', sans-serif;
+}
+
+p {
+    margin-top: 20px;
+    margin-bottom: 10vh;
+    color: #fff;
+    opacity: 0.5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.logo {
+    max-width: 750px;
+    width: 100%;
+}
